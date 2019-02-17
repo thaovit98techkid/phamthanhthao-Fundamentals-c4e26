@@ -1,16 +1,19 @@
-gold =  ["500"]
-pouch = ["flint", 'twine' , 'gemstone']
-backpack = ['xylophone', 'dagger', 'bedroll', 'bread loaf']
-for i in range (len(gold)):
-    print ( gold[i] )
-for i in range (len(pouch)):
-    print ( pouch[i] )
-for i in range (len(backpack)):
-    print ( backpack[i] )
-pocket = ['seashell', 'strange berry', 'lint']
-backpack.remove('dagger')
-for i in range (len(backpack)):
-    print ( backpack[i] )
-gold.append('50')
-for i in range (len(gold)):
-    print ( gold[i] )
+price = {
+    "banana": 4,
+    "apple": 2,
+    "orange": 1.5,
+    "pear": 3
+}
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+total = 0
+for k in price.keys():
+    print(k)
+    print("price:", price[k])
+    print("stock:",stock[k])
+    total += price[k] * stock[k]
+print (total)
